@@ -5,11 +5,18 @@
 /.pnp
 .pnp.js
 
+# IDE user config
+.vscode/
+.idea/
+.vs/
+.eslintcache
+
 # testing
 /coverage
 
 # production
 /build
+/dist
 
 # misc
 .DS_Store
