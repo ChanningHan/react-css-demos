@@ -11,6 +11,7 @@ import {
 } from "react-router-dom";
 import InlineStyleDemo from "./views/InlineStyleDemo";
 import CSSFileBEMDemo from "./views/CSSFileBEMDemo";
+import CSSModuleDemo from "./views/CSSModuleDemo";
 
 export default function App() {
     const Home = () => <h1>React CSS Demos</h1>
@@ -58,6 +59,9 @@ export default function App() {
                         <li>
                             <Link to="/CSSFileBEMDemo">CSSFileBEM</Link>
                         </li>
+                        <li>
+                            <Link to="/CSSModuleDemo">CSSModule</Link>
+                        </li>
                     </ul>
                 </Nav>
 
@@ -72,6 +76,9 @@ export default function App() {
                     </Route>
                     <Route path="/CSSFileBEMDemo">
                         <CSSFileBEMDemo/>
+                    </Route>
+                    <Route path="/CSSModuleDemo">
+                        <CSSModuleDemo/>
                     </Route>
                     <Route path="/">
                         <Home/>
